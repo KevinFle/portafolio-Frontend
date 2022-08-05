@@ -1,0 +1,19 @@
+
+    <div class="container">
+      <h2 class="SOBREMI">{{proyectoTitulo.titulo}}</h2>
+      <div class="dropdown-divider"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col" *ngFor="let proyecto of proyectos">
+          <div class="card">
+            <img [src]="proyecto.img" class="card-img-top">
+            <div class="card-body">
+              <p class="card-title justify-content-xl-center">{{proyecto.titulo}}</p>
+              <div class="dropdown-divider card-dropdown"></div>
+              <p class="card-subtitle justify-content-xl-center mt-2">{{proyecto.texto}}</p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>

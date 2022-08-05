@@ -1,0 +1,42 @@
+
+.first
+{
+  margin-top: 10px;
+  height: 10px;
+  width: 100%;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+.second
+{
+  height: 10px;
+  background: rgba(41, 41, 255, 0.836);
+  border-radius: 5px;
+}
+
+.span
+{
+  display: flex;
+  margin-left: 0%;
+  color: #ddd;
+}
+.porcentaje
+{
+  display: flex;
+  font-variant-position: super;
+  margin-top: -30px;
+  color:#ddd;
+}
+.porcentaje0
+{
+  display: flex;
+  color:#ddd;
+}
+.porcentaje100
+{
+  margin-top: -50px;
+  text-align:right;
+  flex-direction: column-reverse;
+  color:#ddd;
+}

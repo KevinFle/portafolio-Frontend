@@ -1,0 +1,32 @@
+<section>
+    <div class="container mt-5">
+        <h2 class="SOBREMI">{{conocimientosTitulo}}</h2>
+        <fa-icon class="iconoEdit"[icon]="['fas','pencil']" size="xs" *ngIf="areLogin()"></fa-icon>
+      <div class="dropdown-divider"></div>
+    </div>
+    <div class="container align-content-center text-center">
+      <div class="row justify-content-center" >
+        <div class="col-md-3 justify-content-xl-center" *ngFor="let conocimiento of conocimientos">
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <div id="number">
+                            {{conocimiento.porcentaje}}
+                            <p>{{conocimiento.nombre}}</p>
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                       <linearGradient id="GradientColor">
+                          <stop offset="0%" stop-color="#e91e63" />
+                          <stop offset="100%" stop-color="#673ab7" />
+                       </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" [class]="'s'+conocimiento.porcentaje" />
+                </svg>
+            </div>
+        </div>
+        </div>
+        </div>
+</section>

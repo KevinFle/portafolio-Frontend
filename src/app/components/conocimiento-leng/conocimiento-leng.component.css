@@ -1,0 +1,472 @@
+*
+{
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+h2
+{
+  margin-left: 20px;
+}
+.col-md-3
+{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill
+{
+  width: 160px;
+  height: 160px;
+  /*background-color: cornflowerblue;*/
+  position: relative;
+}
+.outer
+{
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.7)
+            }
+.inner
+{
+  background-color: #fff;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                    -0.5px -0.5px 0px rgba(255,255,255,1),
+                    0.5px 0.5px 0px rgba(0,0,0,0.15),
+                    0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+#number
+{
+  font-weight: 600px;
+  color: #555;
+}
+
+circle
+{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+}
+
+svg
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.s0
+{
+  stroke-dashoffset: 472;
+}
+.s1
+{
+  stroke-dashoffset: 467;
+}
+.s2
+{
+  stroke-dashoffset: 462;
+}
+.s3
+{
+  stroke-dashoffset: 457;
+}
+.s4
+{
+  stroke-dashoffset: 453;
+}
+.s5
+{
+  stroke-dashoffset: 448;
+}
+.s6
+{
+  stroke-dashoffset: 443;
+}
+.s7
+{
+  stroke-dashoffset: 438;
+}
+.s8
+{
+  stroke-dashoffset: 434;
+}
+.s9
+{
+  stroke-dashoffset: 429;
+}
+.s10
+{
+  stroke-dashoffset: 424;
+}
+.s11
+{
+  stroke-dashoffset: 420;
+}
+.s12
+{
+  stroke-dashoffset: 415;
+}
+.s13
+{
+  stroke-dashoffset: 410;
+}
+.s14
+{
+  stroke-dashoffset: 405;
+}
+.s15
+{
+  stroke-dashoffset: 401;
+}
+.s16
+{
+  stroke-dashoffset: 396;
+}
+.s17
+{
+  stroke-dashoffset: 391;
+}
+.s18
+{
+  stroke-dashoffset: 387;
+}
+.s19
+{
+  stroke-dashoffset: 382;
+}
+.s20
+{
+  stroke-dashoffset: 377;
+}
+.s21
+{
+  stroke-dashoffset: 372;
+}
+.s22
+{
+  stroke-dashoffset: 368;
+}
+.s23
+{
+  stroke-dashoffset: 363;
+}
+.s24
+{
+  stroke-dashoffset: 358;
+}
+.s25
+{
+  stroke-dashoffset: 354;
+}
+.s26
+{
+  stroke-dashoffset: 349;
+}
+.s27
+{
+  stroke-dashoffset: 344;
+}
+.s28
+{
+  stroke-dashoffset: 339;
+}
+.s29
+{
+  stroke-dashoffset: 335;
+}
+.s30
+{
+  stroke-dashoffset: 330;
+}
+.s31
+{
+  stroke-dashoffset: 325;
+}
+.s32
+{
+  stroke-dashoffset: 320;
+}
+.s33
+{
+  stroke-dashoffset: 315;
+}
+.s34
+{
+  stroke-dashoffset: 310;
+}
+.s35
+{
+  stroke-dashoffset: 305;
+}
+.s36
+{
+  stroke-dashoffset: 300;
+}
+.s37
+{
+  stroke-dashoffset: 295;
+}
+.s38
+{
+  stroke-dashoffset: 290;
+}
+.s39
+{
+  stroke-dashoffset: 285;
+}
+.s40
+{
+  stroke-dashoffset: 280;
+}
+.s41
+{
+  stroke-dashoffset: 275;
+}
+.s42
+{
+  stroke-dashoffset: 270;
+}
+.s43
+{
+  stroke-dashoffset: 265;
+}
+.s44
+{
+  stroke-dashoffset: 260;
+}
+.s45
+{
+  stroke-dashoffset: 255;
+}
+.s46
+{
+  stroke-dashoffset: 250;
+}
+.s47
+{
+  stroke-dashoffset: 245;
+}
+.s48
+{
+  stroke-dashoffset: 240;
+}
+.s49
+{
+  stroke-dashoffset: 235;
+}
+.s50
+{
+  stroke-dashoffset: 230;
+}
+.s51
+{
+  stroke-dashoffset: 225;
+}
+.s52
+{
+  stroke-dashoffset: 220;
+}
+.s53
+{
+  stroke-dashoffset: 215;
+}
+.s54
+{
+  stroke-dashoffset: 210;
+}
+.s55
+{
+  stroke-dashoffset: 205;
+}
+.s56
+{
+  stroke-dashoffset: 200;
+}
+.s57
+{
+  stroke-dashoffset: 195;
+}
+.s58
+{
+  stroke-dashoffset: 190;
+}
+.s59
+{
+  stroke-dashoffset: 185;
+}
+.s60
+{
+  stroke-dashoffset: 180;
+}
+.s61
+{
+  stroke-dashoffset: 175;
+}
+.s62
+{
+  stroke-dashoffset: 172;
+}
+.s63
+{
+  stroke-dashoffset: 170;
+}
+.s64
+{
+  stroke-dashoffset: 168;
+}
+.s65
+{
+  stroke-dashoffset: 165;
+}
+.s66
+{
+  stroke-dashoffset: 162;
+}
+.s67
+{
+  stroke-dashoffset: 160;
+}
+.s68
+{
+  stroke-dashoffset: 157;
+}
+.s69
+{
+  stroke-dashoffset: 155;
+}
+.s70
+{
+  stroke-dashoffset: 152;
+}
+.s71
+{
+  stroke-dashoffset: 150;
+}
+.s72
+{
+  stroke-dashoffset: 145;
+}
+.s73
+{
+  stroke-dashoffset: 140;
+}
+.s74
+{
+  stroke-dashoffset: 135;
+}
+.s75
+{
+  stroke-dashoffset: 130;
+}
+.s76
+{
+  stroke-dashoffset: 125;
+}
+.s77
+{
+  stroke-dashoffset: 120;
+}
+.s78
+{
+  stroke-dashoffset: 115;
+}
+.s79
+{
+  stroke-dashoffset: 110;
+}
+.s80
+{
+  stroke-dashoffset: 105;
+}
+.s81
+{
+  stroke-dashoffset: 100;
+}
+.s82
+{
+  stroke-dashoffset: 95;
+}
+.s83
+{
+  stroke-dashoffset: 90;
+}
+.s84
+{
+  stroke-dashoffset: 85;
+}
+.s85
+{
+  stroke-dashoffset: 80;
+}
+.s86
+{
+  stroke-dashoffset: 75;
+}
+.s87
+{
+  stroke-dashoffset: 70;
+}
+.s88
+{
+  stroke-dashoffset: 65;
+}
+.s89
+{
+  stroke-dashoffset: 55;
+}
+.s90
+{
+  stroke-dashoffset: 50;
+}
+.s91
+{
+  stroke-dashoffset: 45;
+}
+.s92
+{
+  stroke-dashoffset: 40;
+}
+.s93
+{
+  stroke-dashoffset: 35;
+}
+.s94
+{
+  stroke-dashoffset: 30;
+}
+.s95
+{
+  stroke-dashoffset: 25;
+}
+.s96
+{
+  stroke-dashoffset: 20;
+}
+.s97
+{
+  stroke-dashoffset: 15;
+}
+.s98
+{
+  stroke-dashoffset: 10;
+}
+.s99
+{
+  stroke-dashoffset: 5;
+}
+.s100
+{
+  stroke-dashoffset: 0;
+}
+/*calculo porcentaje de relleno 472-472*0.65(porcentaje)*/

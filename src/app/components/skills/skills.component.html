@@ -1,0 +1,21 @@
+<section>
+  <div class="container">
+    <h2 class="SOBREMI mt-5">{{skillsTitulo.tituloSkill}}</h2>
+    <div class="dropdown-divider mb-5"></div>
+  </div>
+  <div class="container">
+      <div *ngFor="let skill of skills">
+        <div class="span">
+            <span >{{skill.nombre}}</span>
+        </div>                   
+        <div class="first">
+            <div [ngStyle]="{'width.%':skill.porcentaje}"class="second"></div>
+        </div>
+        <div >
+            <p class="porcentaje0">0%</p>
+            <p class="porcentaje" [ngStyle]="{'margin-left.%':skill.porcentaje}">{{skill.porcentaje}}</p>
+            <p class="porcentaje100">100%</p>
+        </div>
+        </div>
+	</div>
+</section>

@@ -1,0 +1,24 @@
+<div class="container mb-5"> 
+    <!-- Header -->
+<header class="d-flex flex-wrap py-3 mb-5 border-bottom">   
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">       
+  <a class="navbar-brand" href="#"><img class="navbar-toggler-icon" [src]="miportfolio.header.imgnavbar">{{miportfolio.header.titulonavbar}}</a>
+    <form class="d-flex" role="search">          
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://www.facebook.com/profile.php?id=100004293738467" target="_blank">Facebook</a>                    
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://www.instagram.com/kevin_fleischmann/" target="_blank">Instagram</a>                    
+        </li>      
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/login" routerLinkActive="active">Login</a>                    
+        </li>
+      </ul>
+    </form>
+</div>
+</nav>
+</header>
+</div>
+<img [src]="miportfolio.header.imgbanner" class="modal-fullscreen">

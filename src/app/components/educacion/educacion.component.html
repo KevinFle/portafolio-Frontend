@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="dropdown-divider mt-5"></div>
+    <h2 class="SOBREMI">{{educacionTitulo}}</h2>
+    <div class="dropdown-divider "></div>
+  </div>
+  <div class="row justify-content-center align-content-center">
+    <div class="col-sm-8"></div>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner text-center" >
+          <li *ngFor="let educacion of educacionList">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img [src]="educacion.img" class="d-block w-100 imgcarousel">
+              <div class="carousel-caption d-md-block">
+                <h5 class="h5carousel">{{educacion.Escuela}}</h5>  
+                <div class="d-flex h-100 align-items-center justify-content-center">
+                  <p class="display-8">{{educacion.titulo}}</p>
+                </div>
+                <div class="d-flex h-100 align-items-center justify-content-center">
+                  <p class="display-8">{{educacion.anos}}</p>
+                </div>  
+              </div>
+            </div>
+          </li>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>

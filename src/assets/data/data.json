@@ -1,0 +1,165 @@
+{
+    "header":
+    {
+        "titulonavbar": " Argentina Programa - #YoProgramo",
+        "imgnavbar": "../../imagenes/arg-programa-logo.png",
+        "imgbanner": "../../imagenes/banner.png"
+    },
+    "sobremi":
+    {
+    "tituloSeccion": "Sobre Mi",
+    "name": "Kevin Fleischmann",
+    "imgPerfil": "../../imagenes/foto-perfil.jpeg",
+    "titulo": "Full Stack Developer Jr",
+    "tituloLugar": "Lugar de residencia: ",
+    "lugar": "San Cristobal - Santa Fe",
+    "tituloEstadoCivil": "Estado Civil",
+    "EstadoCivil": "Soltero",
+    "tituloTelefono": "Telefono",
+    "telefono": "(+54) 03408-575430"
+    },
+    "experiencia":
+    {
+        "titulo":"Experiencia",
+        "tituloEmpresaTabla":"Empresa",
+        "tituloTrabajoTabla":"trabajo",
+        "empresa":
+        [
+            {
+                "nombreEmpresa":"Dira",
+                "trabajoEnEmpresa":"Atención al cliente, atención de pedidos via telefonica."
+            }
+        ]
+
+    },
+    "tituloEducacion": "Educación",
+    "educacion":
+    [
+        {
+                "nombre":"Escuela Primaria N°409 'Manuel Belgrano'",
+                "titulo":"Título primaria completa",
+                "anos":"2009-2016",
+                "img":"../../imagenes/IMG_20170927_104330617_HDR.jpg"
+        },
+        {
+                "nombre":"Escuela Secundaria Técnica N°474 'Tambor de Tacuarí'",
+                "titulo":"Título Técnico en informática profesional y personal",
+                "anos":"2017-2022",
+                "img":"../../imagenes/EETP474.png"
+        }
+        
+    ],
+    "Skills":
+    {
+        "tituloSkill":"HARD & SOFT SKILL´S",
+        "skill":
+        [
+        {
+            "nombre": "Productivo",
+            "porcentaje": "85"
+        },
+        {
+            "nombre": "vesátil",
+            "porcentaje": "75"
+        },
+        {
+            "nombre": "innovador",
+            "porcentaje": "65"
+        },
+        {
+            "nombre": "creativo",
+            "porcentaje": "70"
+        },
+        {
+            "nombre": "gestión",
+            "porcentaje": "75"
+        },
+        {
+            "nombre": "Eficaz",
+            "porcentaje": "65"
+        },
+        {
+            "nombre": "programación web",
+            "porcentaje": "52"
+        },
+        {
+            "nombre": "Manejo del Hardware",
+            "porcentaje": "70"
+        }
+    ]
+    },   
+    "conocLeng":
+    {
+        "titulo": "Conocimiento de Lenguajes",
+        "lenguaje":
+        [
+            
+            {
+                "nombre":"Arduino",
+                "porcentaje":"85"
+            },
+            {
+                "nombre":"JavaScript",
+                "porcentaje":"30"
+            },
+        {
+            "nombre":"C#",
+            "porcentaje":"40"
+        },
+        {
+            "nombre":"Python",
+            "porcentaje":"25"
+        },
+        {
+            "nombre":"MySQL",
+            "porcentaje":"0"
+        },
+        {
+            "nombre":"HTML",
+            "porcentaje":"75"
+        },
+        {
+            "nombre":"CSS",
+            "porcentaje":"65"
+        },
+        {
+            "nombre":"Processing",
+            "porcentaje":"55"
+        }
+    ]
+    },
+    "Proyectos":
+    {
+        "titulo":"Ultimos Proyectos",
+        "proyectos":
+        [
+        {
+            "img": "../../imagenes/cansat.jpg",
+            "titulo":"CANSAT ARGENTINA - 2022",
+            "texto": "Con mi grupo llegamos hasta la 3era etapa, y recibimos una mensión de honor"
+        },
+        
+        {
+            "img": "../../imagenes/oia.jpg",
+            "titulo":"Olimpiadas informaticas - 2022",
+            "texto": "Estan por ser realizadas por el gobierno este año"
+        },
+        {
+            "img": "../../imagenes/arduino.png",
+            "titulo":"Sistema Hidroponico inteligente",
+            "texto": "Utilizando Arduino y python"
+        }
+    ]
+    },
+    "footer":
+    {
+        "texto": "Mi Portfolio Web - Kevin Fleischmann © 2022"
+    },
+    "login":
+    {
+        "texto":"Por favor inicie sesión para activar las herramientas de modificación"
+    },
+    "email":"kevin.fle@hotmail.com",
+    "contrasena":"1234"
+
+}

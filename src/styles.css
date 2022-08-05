@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+body
+{
+    background-color: #131313;
+}
+.iconoEdit
+{
+    color: #ffffff;
+    background-color: #2B2B2B;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    margin-left:2rem;
+}
+.mt-5
+{
+    display:flex;
+}
+.body
+{
+    background-color: #131313;
+}
+.navbar
+{
+    background-color: #2B2B2B;
+}
+footer
+{
+    background-color: #131313;
+}
+.SOBREMI
+{
+    color: #1561F0;
+    display: flex;
+    align-content: center;
+}
+#foto-perfil
+{
+    max-width: 250px;
+    max-height: auto;
+    border-radius: 15cm;
+    display: flex;
+    margin: 5px;
+}
+.display-8
+{
+    font-size: 20px;
+    display: flex;
+}
+
+.card
+{
+    background-color: #131313;
+}
+.texto
+{
+    display: flex;
+}
+p
+{
+    display: flex;
+}
+.container
+{
+    margin-top: 10px;
+}
+.dropdown-divider
+{
+    background-color:#1561F0;
+}
+.SOBREMITabla
+{
+    color: #1561F0;
+}

@@ -1,0 +1,18 @@
+<div class="container">
+    <h2 class="SOBREMI mt-5">{{experienciaTitulo.titulo}}</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" class="SOBREMITabla">{{experienciaTitulo.tituloEmpresaTabla}}</th>
+          <th scope="col" class="SOBREMITabla">{{experienciaTitulo.tituloTrabajoTabla}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr *ngFor="let experiencia of experiencias">
+            <td class="text-light">{{experiencia.nombreEmpresa}}</td>
+            <td class="text-light">{{experiencia.trabajoEnEmpresa}}</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>

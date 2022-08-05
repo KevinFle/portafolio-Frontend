@@ -1,0 +1,26 @@
+.carousel {
+    height: auto; 
+    width: 50em;
+    top: 50%;
+    bottom: initial;
+   }
+.imgcarousel
+{
+    max-width: 55em;
+    max-height: auto;
+}
+.display-8
+{
+    text-align: center;
+    color: #131313;
+    font-style: oblique;
+    font-weight: 500;
+}
+.h5carousel
+{
+    color:#131313;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
