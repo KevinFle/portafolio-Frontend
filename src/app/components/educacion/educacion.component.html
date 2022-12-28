@@ -1,27 +1,31 @@
 <div class="container">
     <div class="dropdown-divider mt-5"></div>
-    <h2 class="SOBREMI">{{educacionTitulo}}</h2>
+    <div id="element" *ngIf="hasRoute('/modoEdicion')">
+      <button  (click)="Nuevo()" class="btn btn-success" style="float:right; margin-left:15px">Agregar</button>
+    </div>
+    <h2 class="SOBREMI">Educacion</h2>
     <div class="dropdown-divider "></div>
   </div>
   <div class="row justify-content-center align-content-center">
     <div class="col-sm-8"></div>
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
+        
         <div class="carousel-inner text-center" >
-          <li *ngFor="let educacion of educacionList">
+          <li *ngFor="let estudios of estudioss">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img [src]="educacion.img" class="d-block w-100 imgcarousel">
-              <div class="carousel-caption d-md-block">
-                <h5 class="h5carousel">{{educacion.Escuela}}</h5>  
+              <img [src]="estudios.imagen" class="d-block w-100 imgcarousel">
+              <div class="carousel-caption d-md-block justify-content-xl-center">
+                <h5 class="h5carousel">{{estudios.titulo}}</h5>  
                 <div class="d-flex h-100 align-items-center justify-content-center">
-                  <p class="display-8">{{educacion.titulo}}</p>
+                  <p class="display-8">{{estudios.escuela}}</p>
                 </div>
                 <div class="d-flex h-100 align-items-center justify-content-center">
-                  <p class="display-8">{{educacion.anos}}</p>
+                  <p class="display-8">{{estudios.fecha}}</p>
                 </div>  
+                <div class="d-flex h-100 align-items-center justify-content-center" *ngIf="hasRoute('/modoEdicion')">
+                  <button (click)="Editar(estudios)" class="btn btn-warning btn-xs botonEditar" type="submit">EDITAR</button>
+                  <button (click)="Delete(estudios)"  class="btn btn-danger btn-xs botonEliminar" type="submit">ELIMINAR</button>
+                </div>
               </div>
             </div>
           </li>

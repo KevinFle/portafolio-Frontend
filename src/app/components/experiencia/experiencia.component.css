@@ -1,0 +1,15 @@
+.botonEditar
+{
+    margin-right: 10px; 
+    float:right; 
+    font-size:10px; 
+    background-color: blue; 
+    color: aliceblue;
+}
+.botonEliminar
+{
+    float:right; 
+    font-size:10px; 
+    background-color: rgb(255, 0, 0); 
+    color: aliceblue; 
+}

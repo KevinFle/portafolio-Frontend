@@ -12,7 +12,23 @@
 .card
 {
     max-width: 18rem;
-    height: 25rem;
-    background-color: #cacaca;
+    min-height: 25rem;
+    background-color: #bbbbbb;
     margin-top: 2rem;
+    text-align: center;
+}
+.botonEditar
+{
+    
+    float:right; 
+    font-size:10px; 
+    background-color: blue; 
+    color: aliceblue;
+}
+.botonEliminar
+{
+    float:right; 
+    font-size:10px; 
+    background-color: rgb(255, 0, 0); 
+    color: aliceblue; 
 }

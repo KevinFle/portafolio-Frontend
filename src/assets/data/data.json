@@ -18,6 +18,7 @@
     "tituloTelefono": "Telefono",
     "telefono": "(+54) 03408-575430"
     },
+
     "experiencia":
     {
         "titulo":"Experiencia",
@@ -102,30 +103,30 @@
                 "nombre":"JavaScript",
                 "porcentaje":"30"
             },
-        {
-            "nombre":"C#",
-            "porcentaje":"40"
-        },
-        {
-            "nombre":"Python",
-            "porcentaje":"25"
-        },
-        {
-            "nombre":"MySQL",
-            "porcentaje":"0"
-        },
-        {
-            "nombre":"HTML",
-            "porcentaje":"75"
-        },
-        {
-            "nombre":"CSS",
-            "porcentaje":"65"
-        },
-        {
-            "nombre":"Processing",
-            "porcentaje":"55"
-        }
+            {
+                "nombre":"C#",
+                "porcentaje":"40"
+            },
+            {
+                "nombre":"Python",
+                "porcentaje":"25"
+            },
+            {
+                "nombre":"MySQL",
+                "porcentaje":"0"
+            },
+            {
+                "nombre":"HTML",
+                "porcentaje":"75"
+            },
+            {
+                "nombre":"CSS",
+                "porcentaje":"65"
+            },
+            {
+                "nombre":"Processing",
+                "porcentaje":"55"
+            }
     ]
     },
     "Proyectos":

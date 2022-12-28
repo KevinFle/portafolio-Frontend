@@ -1,19 +1,33 @@
-<div class="container mb-5"> 
+<div class="container mb-5" *ngFor="let header of headerr"> 
     <!-- Header -->
 <header class="d-flex flex-wrap py-3 mb-5 border-bottom">   
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-<div class="container">       
-  <a class="navbar-brand" href="#"><img class="navbar-toggler-icon" [src]="miportfolio.header.imgnavbar">{{miportfolio.header.titulonavbar}}</a>
+<div class="container" >       
+  <a class="navbar-brand" style="display: flex; " href="#"><img class="navbar-toggler-icon" [src]="header.imagen" style="margin-right:15px;">{{header.titulo}}
+  </a>
+  <div id="element" *ngIf="hasRoute('/modoEdicion')">
+    <button  (click)="Editar(header)" class="btn" style="background-color: blue; color: aliceblue;">Editar</button>
+</div>
+  
     <form class="d-flex" role="search">          
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">        
+      <ul class="navbar-nav me-auto mb-2 mb-g-0">        
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="https://www.facebook.com/profile.php?id=100004293738467" target="_blank">Facebook</a>                    
+          <a class="nav-link active redes" aria-current="page" [href]="header.facebook" target="_blank">Facebook</a>                    
         </li>    
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="https://www.instagram.com/kevin_fleischmann/" target="_blank">Instagram</a>                    
+          <a class="nav-link active redes" aria-current="page" [href]="header.instagram" target="_blank">Instagram</a>                    
         </li>      
         <li class="nav-item">
-          <a class="nav-link active" routerLink="/login" routerLinkActive="active">Login</a>                    
+          <a class="nav-link active redes" aria-current="page" [href]="header.github" target="_blank">GitHub</a>                    
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link active redes" aria-current="page" [href]="header.linkedlin" target="_blank">LinkedIn</a>                    
+        </li>  
+        <li class="nav-item" *ngIf="hasRoute('/')">
+          <a class="nav-link active redes" routerLink="/login" routerLinkActive="active">Login</a>                    
+        </li>
+        <li class="nav-item" *ngIf="hasRoute('/modoEdicion')">
+          <a class="nav-link active redes" routerLink="/" routerLinkActive="active">Logout</a>                    
         </li>
       </ul>
     </form>
@@ -21,4 +35,4 @@
 </nav>
 </header>
 </div>
-<img [src]="miportfolio.header.imgbanner" class="modal-fullscreen">
+<img *ngFor="let header of headerr" [src]="header.banner" class="modal-fullscreen">

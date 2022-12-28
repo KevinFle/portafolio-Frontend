@@ -1,0 +1,39 @@
+<div class="row d-flex justify-content-center align-items-center h-100 gradient-custom">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+      <div class="card bg-dark text-white">
+        <div class="card-body p-5 text-center">
+              
+              <div class="mb-md-5 mt-md-4 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">Estudios</h2>
+                <p class="text-white-50 mb-5 ">Por favor ingrese el nuevo estudio</p>
+                
+                <form action="">
+                
+                  <div class="form-outline form-white mb-4">
+                    <label class="form-label" >Link imagen:</label>
+                    <input type="text" [(ngModel)]="estudios.imagen" class="form-control form-control-lg" name="imagen" type="text"  >
+                    </div>
+                  
+                  <div class="form-outline form-white mb-4">
+                    <label class="form-label" >Nombre del titulo:</label>
+                    <input type="text" [(ngModel)]="estudios.titulo" class="form-control form-control-lg" name="titulo" >
+                    </div>
+                    
+                  <div class="form-outline form-white mb-4">
+                    <label class="form-label" >Nombre de la escuela:</label>
+                    <input type="text" [(ngModel)]="estudios.escuela" class="form-control form-control-lg" name="escuela" >
+                    </div>
+                    
+                  <div class="form-outline form-white mb-4">
+                    <label class="form-label" >Periodo de cursado:</label>
+                    <input type="text" [(ngModel)]="estudios.fecha" class="form-control form-control-lg" name="fecha" >
+                    </div>
+                    <button  (click)="Guardar()" type="submit"class="btn btn-success">Agregar</button>
+                </form> 
+              </div>
+              <a class="btn btn-outline-light btn-lg px-5" routerLink="/modoEdicion" routerLinkActive="active">Regresar</a>
+            </div>
+          </div>
+        </div>
+      </div>

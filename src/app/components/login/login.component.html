@@ -7,19 +7,22 @@
               <div class="mb-md-5 mt-md-4 pb-5">
   
                 <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                <p class="text-white-50 mb-5">{{login.texto}}</p>
+                <p class="text-white-50 mb-5 ">Por favor inicie sesión para poder realizar modificaciones</p>
                 
-                <div class="form-outline form-white mb-4">
-                  <label class="form-label" for="typeEmailX">Email</label>
-                  <input type="email" id="typeEmailX" name="email"  class="form-control form-control-lg" [(ngModel)]="email"/>
-                </div>
-                
-                <div class="form-outline form-white mb-4">
-                  <label class="form-label" for="typePasswordX">Contraseña</label>
-                  <input type="password" id="typePasswordX" class="form-control form-control-lg" name="password"[(ngModel)]="password" />
-                </div>
-                
-                <input class="btn btn-outline-light btn-lg px-5" type="submit">
+                <form (ngSubmit)="userLogin()">
+                  
+                  <div class="form-outline form-white mb-4">
+                    <label class="form-label" for="inputEmail">Email</label>
+                    <input type="usuario" [(ngModel)]="user.userId" class="form-control form-control-lg" id="userId" name="userId" placeholder="Ingrese su usuario">
+                  </div>
+                  
+                  <div class="form-outline form-white mb-4">
+                    <label class="form-label" for="inputPassword">Contraseña</label>
+                    <input type="password" [(ngModel)]="user.password" class="form-control form-control-lg" id="password" name="password" placeholder="Ingrese su contraseña">
+                  </div>
+                  
+                  <input class="btn btn-outline-light btn-lg px-5" type="submit">
+                </form>
               </div>
               <a class="btn btn-outline-light btn-lg px-5" routerLink="" routerLinkActive="active">Regresar</a>
             </div>

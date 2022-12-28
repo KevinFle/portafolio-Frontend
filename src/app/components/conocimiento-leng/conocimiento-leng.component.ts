@@ -1,27 +1,42 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/services/portfolio.service';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { Conocimientos } from 'src/app/modelo/conocimientos';
+import { ConocimientosService } from 'src/app/services/conocimientos.service'; 
+
 @Component({
   selector: 'app-conocimiento-leng',
   templateUrl: './conocimiento-leng.component.html',
   styleUrls: ['./conocimiento-leng.component.css']
 })
 export class ConocimientoLengComponent implements OnInit {
-  conocimientos:any;
-  conocimientosTitulo:any;
-  constructor(private datosPortfolio: PortfolioService) {
-    
-  }
+  conocimientoss!:Conocimientos[];
+  constructor(private service: ConocimientosService, private router: Router) { }
   
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data =>
-      {
-        console.log(data);
-        this.conocimientos=data.conocLeng.lenguaje;
-        this.conocimientosTitulo=data.conocLeng.titulo;
-      });
+    this.service.getConocimientos()
+    .subscribe(data=>{
+      this.conocimientoss=data;
+    })
+    }
+      Editar(conocimientos:Conocimientos):void{
+        localStorage.setItem("id",conocimientos.id.toString());
+        this.router.navigate(["editarConocimientos"]);
+      }
+    
+      Delete(conocimientos:Conocimientos){
+        this.service.deleteConocimientos(conocimientos)
+        .subscribe(data=>{
+          this.conocimientoss=this.conocimientoss.filter(p=>p!==conocimientos);
+          alert("Conocimiento eliminado...");
+        })
   }
-  areLogin()
+  Nuevo(){
+    this.router.navigate(['conocimientosAgregar']);
+  }
+
+  hasRoute(route: string)
   {
-    return localStorage.getItem('login');
+    return this.router.url == route
   }
 }

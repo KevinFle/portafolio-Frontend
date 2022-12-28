@@ -1,5 +1,8 @@
-<footer class="footer mt-auto py-3 bg-#131313">
-    <div class="container">
-      <span class="text-muted">{{footer.texto}}</span>
+<footer class="footer mt-auto py-3 bg-#131313" style="display: flex;">
+    <div class="container" style="display: flex;" *ngFor="let footer of footerr"> 
+      <p class="text-muted" style="display: flex;">{{footer.titulo}}</p>
+      <div id="element" *ngIf="hasRoute('/modoEdicion')">
+        <button  (click)="Editar(footer)" class="btn" style="margin-left: 15px; background-color: blue; color: aliceblue; display: flex;">Editar</button>
+    </div>
     </div>
 </footer>

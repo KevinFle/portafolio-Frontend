@@ -3,6 +3,7 @@
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 }
+
 h2
 {
   margin-left: 20px;
@@ -67,207 +68,207 @@ svg
 }
 .s0
 {
-  stroke-dashoffset: 472;
+  stroke-dashoffset: 532;
 }
 .s1
 {
-  stroke-dashoffset: 467;
+  stroke-dashoffset: 527;
 }
 .s2
 {
-  stroke-dashoffset: 462;
+  stroke-dashoffset: 522;
 }
 .s3
 {
-  stroke-dashoffset: 457;
+  stroke-dashoffset: 517;
 }
 .s4
 {
-  stroke-dashoffset: 453;
+  stroke-dashoffset: 513;
 }
 .s5
 {
-  stroke-dashoffset: 448;
+  stroke-dashoffset: 508;
 }
 .s6
 {
-  stroke-dashoffset: 443;
+  stroke-dashoffset: 503;
 }
 .s7
 {
-  stroke-dashoffset: 438;
+  stroke-dashoffset: 498;
 }
 .s8
 {
-  stroke-dashoffset: 434;
+  stroke-dashoffset: 494;
 }
 .s9
 {
-  stroke-dashoffset: 429;
+  stroke-dashoffset: 489;
 }
 .s10
 {
-  stroke-dashoffset: 424;
+  stroke-dashoffset: 484;
 }
 .s11
 {
-  stroke-dashoffset: 420;
+  stroke-dashoffset: 470;
 }
 .s12
 {
-  stroke-dashoffset: 415;
+  stroke-dashoffset: 465;
 }
 .s13
 {
-  stroke-dashoffset: 410;
+  stroke-dashoffset: 460;
 }
 .s14
 {
-  stroke-dashoffset: 405;
+  stroke-dashoffset: 455;
 }
 .s15
 {
-  stroke-dashoffset: 401;
+  stroke-dashoffset: 451;
 }
 .s16
 {
-  stroke-dashoffset: 396;
+  stroke-dashoffset: 446;
 }
 .s17
 {
-  stroke-dashoffset: 391;
+  stroke-dashoffset: 441;
 }
 .s18
 {
-  stroke-dashoffset: 387;
+  stroke-dashoffset: 437;
 }
 .s19
 {
-  stroke-dashoffset: 382;
+  stroke-dashoffset: 432;
 }
 .s20
 {
-  stroke-dashoffset: 377;
+  stroke-dashoffset: 427;
 }
 .s21
 {
-  stroke-dashoffset: 372;
+  stroke-dashoffset: 422;
 }
 .s22
 {
-  stroke-dashoffset: 368;
+  stroke-dashoffset: 418;
 }
 .s23
 {
-  stroke-dashoffset: 363;
+  stroke-dashoffset: 413;
 }
 .s24
 {
-  stroke-dashoffset: 358;
+  stroke-dashoffset: 408;
 }
 .s25
 {
-  stroke-dashoffset: 354;
+  stroke-dashoffset: 370;
 }
 .s26
 {
-  stroke-dashoffset: 349;
+  stroke-dashoffset: 369;
 }
 .s27
 {
-  stroke-dashoffset: 344;
+  stroke-dashoffset: 364;
 }
 .s28
 {
-  stroke-dashoffset: 339;
+  stroke-dashoffset: 359;
 }
 .s29
 {
-  stroke-dashoffset: 335;
+  stroke-dashoffset: 345;
 }
 .s30
 {
-  stroke-dashoffset: 330;
+  stroke-dashoffset: 340;
 }
 .s31
 {
-  stroke-dashoffset: 325;
+  stroke-dashoffset: 365;
 }
 .s32
 {
-  stroke-dashoffset: 320;
+  stroke-dashoffset: 360;
 }
 .s33
 {
-  stroke-dashoffset: 315;
+  stroke-dashoffset: 355;
 }
 .s34
 {
-  stroke-dashoffset: 310;
+  stroke-dashoffset: 350;
 }
 .s35
 {
-  stroke-dashoffset: 305;
+  stroke-dashoffset: 345;
 }
 .s36
 {
-  stroke-dashoffset: 300;
+  stroke-dashoffset: 340;
 }
 .s37
 {
-  stroke-dashoffset: 295;
+  stroke-dashoffset: 335;
 }
 .s38
 {
-  stroke-dashoffset: 290;
+  stroke-dashoffset: 330;
 }
 .s39
 {
-  stroke-dashoffset: 285;
+  stroke-dashoffset: 325;
 }
 .s40
 {
-  stroke-dashoffset: 280;
+  stroke-dashoffset: 320;
 }
 .s41
 {
-  stroke-dashoffset: 275;
+  stroke-dashoffset: 315;
 }
 .s42
 {
-  stroke-dashoffset: 270;
+  stroke-dashoffset: 310;
 }
 .s43
 {
-  stroke-dashoffset: 265;
+  stroke-dashoffset: 305;
 }
 .s44
 {
-  stroke-dashoffset: 260;
+  stroke-dashoffset: 300;
 }
 .s45
 {
-  stroke-dashoffset: 255;
+  stroke-dashoffset: 295;
 }
 .s46
 {
-  stroke-dashoffset: 250;
+  stroke-dashoffset: 290;
 }
 .s47
 {
-  stroke-dashoffset: 245;
+  stroke-dashoffset: 285;
 }
 .s48
 {
-  stroke-dashoffset: 240;
+  stroke-dashoffset: 280;
 }
 .s49
 {
-  stroke-dashoffset: 235;
+  stroke-dashoffset: 265;
 }
 .s50
 {
-  stroke-dashoffset: 230;
+  stroke-dashoffset: 250;
 }
 .s51
 {
@@ -407,66 +408,84 @@ svg
 }
 .s85
 {
-  stroke-dashoffset: 80;
+  stroke-dashoffset: 100;
 }
 .s86
 {
-  stroke-dashoffset: 75;
+  stroke-dashoffset: 95;
 }
 .s87
 {
-  stroke-dashoffset: 70;
+  stroke-dashoffset: 90;
 }
 .s88
 {
-  stroke-dashoffset: 65;
+  stroke-dashoffset: 87;
 }
 .s89
 {
-  stroke-dashoffset: 55;
+  stroke-dashoffset: 85;
 }
 .s90
 {
-  stroke-dashoffset: 50;
+  stroke-dashoffset: 80;
 }
 .s91
 {
-  stroke-dashoffset: 45;
+  stroke-dashoffset: 78;
 }
 .s92
 {
-  stroke-dashoffset: 40;
+  stroke-dashoffset: 75;
 }
 .s93
 {
-  stroke-dashoffset: 35;
+  stroke-dashoffset: 75;
 }
 .s94
 {
-  stroke-dashoffset: 30;
+  stroke-dashoffset: 85;
 }
 .s95
 {
-  stroke-dashoffset: 25;
+  stroke-dashoffset: 80;
 }
 .s96
 {
-  stroke-dashoffset: 20;
+  stroke-dashoffset: 70;
 }
 .s97
 {
-  stroke-dashoffset: 15;
+  stroke-dashoffset: 60;
 }
 .s98
 {
-  stroke-dashoffset: 10;
+  stroke-dashoffset: 40;
 }
 .s99
 {
-  stroke-dashoffset: 5;
+  stroke-dashoffset: 30;
 }
 .s100
 {
   stroke-dashoffset: 0;
 }
 /*calculo porcentaje de relleno 472-472*0.65(porcentaje)*/
+
+.botonEditar
+{
+    margin-right: 10px;
+    margin-bottom: 35px; 
+    float:right; 
+    font-size:10px; 
+    background-color: blue; 
+    color: aliceblue;
+}
+.botonEliminar
+{
+  margin-bottom: 35px;
+    float:right; 
+    font-size:10px; 
+    background-color: rgb(255, 0, 0); 
+    color: aliceblue; 
+}

@@ -1,22 +1,43 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/services/portfolio.service';
-
+import { SobreService } from 'src/app/services/sobre.service';
+import { Sobre } from 'src/app/modelo/sobre';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-sobremi',
   templateUrl: './sobremi.component.html',
   styleUrls: ['./sobremi.component.css']
 })
 export class SobremiComponent implements OnInit {
-  sobremi:any;
-  sobremiMapa:any;
-  constructor(private datosPortfolio: PortfolioService) { }
+  sobress!: Sobre[];
+  constructor(private service: SobreService, private router:Router) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data =>
-      {
-        this.sobremi=data.sobremi;
-        this.sobremiMapa=data.sobremi.mapa;
-      })
-  }
+    this.service.getSobre()
+    .subscribe(data=>{
+      this.sobress=data;
+  })
+
+
+}
+Editar(sobre:Sobre):void{
+  localStorage.setItem("id",sobre.id.toString());
+  this.router.navigate(["editarSobre"]);
+}
+
+Delete(sobre:Sobre){
+  this.service.deleteSobre(sobre)
+  .subscribe(data=>{
+    this.sobress=this.sobress.filter(p=>p!==sobre);
+    alert("Sobre eliminado...");
+  })
+}
+Nuevo(){
+this.router.navigate(['sobreAgregar']);
+}
+
+hasRoute(route: string)
+{
+return this.router.url == route
+}
 
 }

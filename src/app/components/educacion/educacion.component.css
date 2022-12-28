@@ -7,7 +7,7 @@
 .imgcarousel
 {
     max-width: 55em;
-    max-height: auto;
+    max-height: 30rem;
 }
 .display-8
 {
@@ -15,6 +15,7 @@
     color: #131313;
     font-style: oblique;
     font-weight: 500;
+    align-content: center;
 }
 .h5carousel
 {
@@ -24,3 +25,18 @@
 }
 
 
+.botonEditar
+{
+    margin-right: 10px; 
+    float:right; 
+    font-size:10px; 
+    background-color: blue; 
+    color: aliceblue;
+}
+.botonEliminar
+{
+    float:right; 
+    font-size:10px; 
+    background-color: rgb(255, 0, 0); 
+    color: aliceblue; 
+}

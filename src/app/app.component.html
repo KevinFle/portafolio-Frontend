@@ -1,14 +1,36 @@
-<body class="body" >
-  <app-header *ngIf="hasRoute('/')"></app-header>
-  <app-sobremi *ngIf="hasRoute('/')"></app-sobremi>
-  <app-experiencia *ngIf="hasRoute('/')"></app-experiencia>
-  <app-educacion *ngIf="hasRoute('/')"></app-educacion>
-  <app-skills *ngIf="hasRoute('/')"></app-skills>
-  <app-conocimiento-leng *ngIf="hasRoute('/')"></app-conocimiento-leng>
-  <app-proyectos *ngIf="hasRoute('/')"></app-proyectos>
-  <app-footer *ngIf="hasRoute('/')"></app-footer>
-  <app-login *ngIf="hasRoute('/login')"></app-login>
+<body class="body" *ngIf="hasRoute('/')">
+  <app-header></app-header>
+  <app-sobremi></app-sobremi>
+  <app-experiencia></app-experiencia>
+  <app-educacion></app-educacion>
+  <app-skills></app-skills>
+  <app-conocimiento-leng></app-conocimiento-leng>
+  <app-proyectos></app-proyectos>
+  <app-footer ></app-footer>
 </body>
-
-
-
+<body class="body" *ngIf="hasRoute('/modoEdicion')">
+  <app-header></app-header>
+  <app-sobremi></app-sobremi>
+  <app-experiencia></app-experiencia>
+  <app-educacion></app-educacion>
+  <app-skills></app-skills>
+  <app-conocimiento-leng></app-conocimiento-leng>
+  <app-proyectos></app-proyectos>
+  <app-footer ></app-footer>
+</body>
+<body class="body">
+  <app-login *ngIf="hasRoute('/login')"></app-login>
+  <app-header-editar *ngIf="hasRoute('/editarHeader')"></app-header-editar>
+  <app-sobre-editar *ngIf="hasRoute('/editarSobre')"></app-sobre-editar>
+  <app-experiencia-editar *ngIf="hasRoute('/editarExperiencia')"></app-experiencia-editar>
+  <app-experiencia-agregar *ngIf="hasRoute('/agregarExperiencia')"></app-experiencia-agregar>
+  <app-educacion-agregar *ngIf="hasRoute('/estudiosAgregar')"></app-educacion-agregar>
+  <app-skills-agregar *ngIf="hasRoute('/skillsAgregar')"></app-skills-agregar>
+  <app-proyectos-agregar *ngIf="hasRoute('/proyectoAgregar')"></app-proyectos-agregar>
+  <app-conocimiento-leng-agregar *ngIf="hasRoute('/conocimientosAgregar')"></app-conocimiento-leng-agregar>
+  <app-educacion-editar *ngIf="hasRoute('/editarEstudios')"></app-educacion-editar>
+  <app-footer-editar *ngIf="hasRoute('/editarFooter')"></app-footer-editar>
+  <app-skills-editar *ngIf="hasRoute('/editarSkills')"></app-skills-editar>
+  <app-conocimiento-leng-editar *ngIf="hasRoute('/editarConocimientos')"></app-conocimiento-leng-editar>
+  <app-proyectos-editar *ngIf="hasRoute('/editarProyecto')"></app-proyectos-editar>
+</body>

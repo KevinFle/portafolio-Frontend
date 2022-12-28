@@ -22,6 +22,7 @@
     "@fortawesome/angular-fontawesome": "^0.11.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "bootstrap": "^5.2.0",
+    "express": "^4.18.2",
     "jquery": "^3.6.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.4.0",
@@ -39,5 +40,18 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.7.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinFle/front-end-Angular.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinFle/front-end-Angular/issues"
+  },
+  "homepage": "https://github.com/KevinFle/front-end-Angular#readme"
 }

@@ -1,13 +1,20 @@
 <section>
   <div class="container">
-    <h2 class="SOBREMI mt-5">{{skillsTitulo.tituloSkill}}</h2>
+    <div id="element" *ngIf="hasRoute('/modoEdicion')">
+      <button  (click)="Nuevo()" class="btn btn-success" style="float:right; margin-left:15px">Agregar</button>
+    </div>
+    <h2 class="SOBREMI mt-5">Hard & Soft's Skills</h2>
     <div class="dropdown-divider mb-5"></div>
   </div>
   <div class="container">
-      <div *ngFor="let skill of skills">
+      <div *ngFor="let skill of skillss">
         <div class="span">
-            <span >{{skill.nombre}}</span>
-        </div>                   
+            <span >{{skill.titulo}}</span>
+          </div>                   
+            <div class="botones" *ngIf="hasRoute('/modoEdicion')">
+              <button (click)="Delete(skill)"  class="btn btn-danger btn-xs botonEliminar" type="submit">ELIMINAR</button>
+              <button (click)="Editar(skill)" class="btn btn-warning btn-xs botonEditar" type="submit">EDITAR</button>
+            </div>   
         <div class="first">
             <div [ngStyle]="{'width.%':skill.porcentaje}"class="second"></div>
         </div>

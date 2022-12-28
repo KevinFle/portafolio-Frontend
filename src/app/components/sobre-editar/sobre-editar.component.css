@@ -1,0 +1,11 @@
+.gradient-custom 
+{   
+    background: linear-gradient(to right, #1561F0, rgba(37, 117, 252, 1));
+}
+.card
+{
+    margin-top: 3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    max-width: 50rem;
+}
