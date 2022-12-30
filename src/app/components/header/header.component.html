@@ -3,31 +3,58 @@
 <header class="d-flex flex-wrap py-3 mb-5 border-bottom">   
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 <div class="container" >       
-  <a class="navbar-brand" style="display: flex; " href="#"><img class="navbar-toggler-icon" [src]="header.imagen" style="margin-right:15px;">{{header.titulo}}
+  <a class="navbar-brand" style="display: flex; " href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa" target="_blank"><img class="navbar-toggler-icon" [src]="header.imagen" style="margin-right:15px;">{{header.titulo}}
   </a>
-  <div id="element" *ngIf="hasRoute('/modoEdicion')">
-    <button  (click)="Editar(header)" class="btn" style="background-color: blue; color: aliceblue;">Editar</button>
+ 
+  
+  
+    <div id="element" *ngIf="hasRoute('/modoEdicion')"> 
+    <button  (click)="Editar(header)" class="botonEditar btn btn-warning btn-xs">
+      <i class="fa fa-pencil fa-2x" style="color:white;" aria-hidden="true"></i>
+    </button>
 </div>
   
     <form class="d-flex" role="search">          
       <ul class="navbar-nav me-auto mb-2 mb-g-0">        
         <li class="nav-item">
-          <a class="nav-link active redes" aria-current="page" [href]="header.facebook" target="_blank">Facebook</a>                    
+          
+          <a class="nav-link active redes" aria-current="page" [href]="header.facebook" target="_blank">
+            <button style="background: rgba(0,0,0,0); border:transparent;">
+            <i class="fa fa-facebook-square fa-2x" style="color:white;" aria-hidden="true"></i>
+          </button>
+        </a>                    
         </li>    
         <li class="nav-item">
-          <a class="nav-link active redes" aria-current="page" [href]="header.instagram" target="_blank">Instagram</a>                    
+          <a class="nav-link active redes" aria-current="page" [href]="header.instagram" target="_blank"><button style="background: rgba(0,0,0,0); border:transparent;">
+            <i class="fa fa-instagram fa-2x" style="color:white;" aria-hidden="true"></i>
+          </button>
+        </a>                    
         </li>      
         <li class="nav-item">
-          <a class="nav-link active redes" aria-current="page" [href]="header.github" target="_blank">GitHub</a>                    
+          <a class="nav-link active redes" aria-current="page" [href]="header.github" target="_blank">
+            <button style="background: rgba(0,0,0,0); border:transparent;">
+              <i class="fa fa-github fa-2x" style="color:white;" aria-hidden="true"></i>
+            </button>
+          </a>                    
         </li>    
         <li class="nav-item">
-          <a class="nav-link active redes" aria-current="page" [href]="header.linkedlin" target="_blank">LinkedIn</a>                    
+          <a class="nav-link active redes" aria-current="page" [href]="header.linkedlin" target="_blank">
+            <button style="background: rgba(0,0,0,0); border:transparent;">
+            <i class="fa fa-linkedin-square fa-2x" style="color:white;" aria-hidden="true"></i>
+          </button>
+        </a>                    
         </li>  
         <li class="nav-item" *ngIf="hasRoute('/')">
-          <a class="nav-link active redes" routerLink="/login" routerLinkActive="active">Login</a>                    
+          <a class="nav-link active redes" routerLink="/login" routerLinkActive="active">
+            <button style="background: rgba(0,0,0,0); border:transparent;">
+            <i class="fa fa-lock fa-2x" style="color:white;" aria-hidden="true"></i>
+          </button></a>                    
         </li>
         <li class="nav-item" *ngIf="hasRoute('/modoEdicion')">
-          <a class="nav-link active redes" routerLink="/" routerLinkActive="active">Logout</a>                    
+          <a class="nav-link active redes" routerLink="/" routerLinkActive="active">
+            <button style="background: rgba(0,0,0,0); border:transparent;">
+            <i class="fa fa-unlock fa-2x" style="color:white;" aria-hidden="true"></i>
+          </button></a>                    
         </li>
       </ul>
     </form>

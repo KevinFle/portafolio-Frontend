@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Conocimientos } from 'src/app/modelo/conocimientos';
 import { ConocimientosService } from 'src/app/services/conocimientos.service'; 
-
 @Component({
   selector: 'app-conocimiento-leng',
   templateUrl: './conocimiento-leng.component.html',
@@ -12,7 +11,6 @@ import { ConocimientosService } from 'src/app/services/conocimientos.service';
 export class ConocimientoLengComponent implements OnInit {
   conocimientoss!:Conocimientos[];
   constructor(private service: ConocimientosService, private router: Router) { }
-  
   ngOnInit(): void {
     this.service.getConocimientos()
     .subscribe(data=>{

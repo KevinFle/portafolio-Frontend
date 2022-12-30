@@ -1,7 +1,7 @@
 
     <div class="container">
       <div id="element" *ngIf="hasRoute('/modoEdicion')">
-        <button  (click)="Nuevo()" class="btn btn-success" style="float:right; margin-left:15px">Agregar</button>
+        <button  (click)="Nuevo()" class="btn btn-success" style="float:right; margin-left:15px"><i class="fa fa-2x fa-plus-circle"></i></button>
       </div>
       <h2 class="SOBREMI">Ultimos Proyectos</h2>
       <div class="dropdown-divider"></div>
@@ -17,8 +17,8 @@
               <p class="card-subtitle justify-content-xl-center mt-2">{{proyecto.descripcion}}</p>
             </div>
             <div class="">
-              <button (click)="Delete(proyecto)" *ngIf="hasRoute('/modoEdicion')" class="btn btn-danger btn-xs botonEliminar" type="submit">ELIMINAR</button>
-              <button (click)="Editar(proyecto)" *ngIf="hasRoute('/modoEdicion')" class=" btn btn-warning btn-xs botonEditar" type="submit">EDITAR</button>
+              <button (click)="Delete(proyecto)" *ngIf="hasRoute('/modoEdicion')" class="btn btn-danger btn-xs botonEliminar" type="submit"><i class="fa fa-2x fa-trash"></i></button>
+              <button (click)="Editar(proyecto)" *ngIf="hasRoute('/modoEdicion')" class=" btn btn-warning btn-xs botonEditar" type="submit"><i class="fa fa-2x fa-pencil"></i></button>
             </div>
           </div>
         </div>

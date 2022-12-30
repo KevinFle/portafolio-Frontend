@@ -1,6 +1,6 @@
 <div class="container align-content-center text-center" *ngFor="let sobre of sobress">
     <h2 class="SOBREMI mt-5 d-flex">Sobre Mi <div id="element" class="d-flex" *ngIf="hasRoute('/modoEdicion')">
-      <button  (click)="Editar(sobre)" class="btn d-flex" style="background-color: blue; color: aliceblue; margin-left: 15px;">Editar</button>
+      <button  (click)="Editar(sobre)" class="btn btn-warning botonEditar" ><i class="fa fa-pencil fa-2x"></i></button>
   </div></h2>
     
     <div class="dropdown-divider"></div>

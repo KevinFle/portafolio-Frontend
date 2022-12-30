@@ -1,6 +1,6 @@
 <div class="container">
   <div id="element" *ngIf="hasRoute('/modoEdicion')">
-    <button  (click)="Nuevo()" class="btn btn-success" style="float:right; margin-left:15px">Agregar</button>
+    <button  (click)="Nuevo()" class="btn btn-success" style="float:right; margin-left:15px"><i class="fa fa-plus-circle fa-2x" style="color:white;" aria-hidden="true"></i></button>
   
   </div>
   <h2 class="SOBREMI mt-5">Experiencia Laboral</h2>
@@ -16,8 +16,9 @@
             <td class="text-light">{{experiencia.empresa}}</td>
             <td class="text-light">{{experiencia.trabajo}}</td>
             <td class="text-light" *ngIf="hasRoute('/modoEdicion')">
-              <button (click)="Delete(experiencia)"  class="btn btn-danger btn-xs botonEliminar" type="submit">ELIMINAR</button>
-              <button (click)="Editar(experiencia)" class="btn btn-warning btn-xs botonEditar" type="submit">EDITAR</button>
+              <button (click)="Delete(experiencia)"  class="btn btn-danger btn-xs botonEliminar" type="submit"><i class="fa fa-trash fa-2x" style="color:white;" aria-hidden="true"></i></button>
+              <button (click)="Editar(experiencia)" class="btn btn-warning btn-xs botonEditar" type="submit">
+                <i class="fa fa-pencil fa-2x" style="color:white;" aria-hidden="true"></i></button>
             </td>       
           </tr>
       </tbody>

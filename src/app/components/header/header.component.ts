@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HeaderService} from 'src/app/services/header.service';
 import { Header} from 'src/app/modelo/header';
+import { faAdd } from '@fortawesome/free-solid-svg-icons';
+import { faUserLock} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -9,6 +11,8 @@ import { Header} from 'src/app/modelo/header';
 })
 export class HeaderComponent implements OnInit {
   headerr!: Header[];
+  myIcon = faAdd;
+  usuario = faUserLock;
   constructor(private service: HeaderService , private router: Router) { }
 
   ngOnInit(): void {

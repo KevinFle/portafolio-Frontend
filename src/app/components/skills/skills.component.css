@@ -42,7 +42,7 @@
 }
 .botones
 {
-  margin-bottom: 35px;
+  margin-bottom: 10px;
   text-align:right;
   flex-direction: column-reverse;
   color:#ddd;
@@ -50,8 +50,6 @@
 .botonEditar
 {
     margin-right: 10px; 
-    float:right; 
-    
     font-size:10px; 
     background-color: blue; 
     color: aliceblue;

@@ -3,15 +3,7 @@ body
 {
     background-color: #131313;
 }
-.iconoEdit
-{
-    color: #ffffff;
-    background-color: #2B2B2B;
-    width:25px;
-    height:25px;
-    border-radius:50%;
-    margin-left:2rem;
-}
+
 .mt-5
 {
     display:flex;

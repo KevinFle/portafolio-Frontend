@@ -19,7 +19,7 @@
 }
 .botonEditar
 {
-    
+    margin-right: 20px;
     float:right; 
     font-size:10px; 
     background-color: blue; 
@@ -27,6 +27,7 @@
 }
 .botonEliminar
 {
+    margin-right: 90px;
     float:right; 
     font-size:10px; 
     background-color: rgb(255, 0, 0); 

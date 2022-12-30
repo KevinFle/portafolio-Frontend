@@ -1,8 +1,9 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <section>
-<div class="container mt-5">
+    <div class="container mt-5">
     <h2 class="SOBREMI" style="margin-left: -5px">Conocimientos</h2>
     <div id="element" *ngIf="hasRoute('/modoEdicion')">
-        <button  (click)="Nuevo()" class="btn btn-success" style="margin-left: 770px; margin-right: -5px">Agregar</button>
+        <button  (click)="Nuevo()" class="btn btn-success" style="margin-left: 770px; margin-right: -5px"><i class="fa fa-2x fa-plus-circle"></i></button>
     </div>
 </div>
 
@@ -28,8 +29,8 @@
                     <circle cx="80" cy="80" r="70" stroke-linecap="round" [class]="'s'+conocimiento.valor" />
                 </svg>
                 <div class="d-flex h-100 align-items-center justify-content-center" *ngIf="hasRoute('/modoEdicion')">
-                    <button (click)="Editar(conocimiento)" class="btn btn-warning btn-xs botonEditar" type="submit">EDITAR</button>
-                    <button (click)="Delete(conocimiento)"  class="btn btn-danger btn-xs botonEliminar" type="submit">ELIMINAR</button>
+                    <button (click)="Editar(conocimiento)" class="btn btn-warning btn-xs botonEditar" type="submit"><i class="fa fa-2x fa-pencil"></i></button>
+                      <button (click)="Delete(conocimiento)"  class="btn btn-danger btn-xs botonEliminar" type="submit"><i class="fa fa-2x fa-trash"></i></button>
                 </div>
             </div>
         </div>

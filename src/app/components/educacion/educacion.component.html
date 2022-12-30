@@ -1,7 +1,7 @@
 <div class="container">
     <div class="dropdown-divider mt-5"></div>
     <div id="element" *ngIf="hasRoute('/modoEdicion')">
-      <button  (click)="Nuevo()" class="btn btn-success" style="float:right; margin-left:15px">Agregar</button>
+      <button  (click)="Nuevo()" class="btn btn-success" style="float:right; margin-left:15px"><i class="fa fa-plus-circle fa-2x" style="color:white;" aria-hidden="true"></i></button>
     </div>
     <h2 class="SOBREMI">Educacion</h2>
     <div class="dropdown-divider "></div>
@@ -23,8 +23,8 @@
                   <p class="display-8">{{estudios.fecha}}</p>
                 </div>  
                 <div class="d-flex h-100 align-items-center justify-content-center" *ngIf="hasRoute('/modoEdicion')">
-                  <button (click)="Editar(estudios)" class="btn btn-warning btn-xs botonEditar" type="submit">EDITAR</button>
-                  <button (click)="Delete(estudios)"  class="btn btn-danger btn-xs botonEliminar" type="submit">ELIMINAR</button>
+                  <button (click)="Editar(estudios)" class="btn btn-warning btn-xs botonEditar" type="submit"><i class="fa fa-pencil fa-2x" style="color:white;" aria-hidden="true"></i></button>
+                  <button (click)="Delete(estudios)"  class="btn btn-danger btn-xs botonEliminar" type="submit"><i class="fa fa-trash fa-2x" style="color:white;" aria-hidden="true"></i></button>
                 </div>
               </div>
             </div>
